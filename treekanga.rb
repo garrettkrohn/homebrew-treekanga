@@ -16,7 +16,7 @@ class Treekanga < Formula
       url "https://github.com/garrettkrohn/treekanga/releases/download/v1.0.19/treekanga_Darwin_x86_64.tar.gz"
       sha256 "f4a88ece9369b438724f22143bd61c857ee45773312177110290141b6693445a"
 
-      def install
+      define_method :install do
         bin.install "treekanga"
       end
     end
@@ -24,7 +24,7 @@ class Treekanga < Formula
       url "https://github.com/garrettkrohn/treekanga/releases/download/v1.0.19/treekanga_Darwin_arm64.tar.gz"
       sha256 "9d55f8ab8ba3e488321edd10fcde4365a8055f5cb33bcbe27e5f8a50adfef05a"
 
-      def install
+      define_method :install do
         bin.install "treekanga"
       end
     end
@@ -36,7 +36,7 @@ class Treekanga < Formula
         url "https://github.com/garrettkrohn/treekanga/releases/download/v1.0.19/treekanga_Linux_x86_64.tar.gz"
         sha256 "35fcc948e4e164e861dad7c807d9c52260ca4716a6d2e90d98e703e832300b5c"
 
-        def install
+        define_method :install do
           bin.install "treekanga"
         end
       end
@@ -46,7 +46,7 @@ class Treekanga < Formula
         url "https://github.com/garrettkrohn/treekanga/releases/download/v1.0.19/treekanga_Linux_arm64.tar.gz"
         sha256 "2c93e58e26981ac1e5e6b96b753a81ed8b83543828c7366e2020a6bf1745133e"
 
-        def install
+        define_method :install do
           bin.install "treekanga"
         end
       end
