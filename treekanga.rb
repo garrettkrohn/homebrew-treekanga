@@ -5,7 +5,7 @@
 class Treekanga < Formula
   desc "Git Worktree Manager"
   homepage "https://github.com/garrettkrohn/treekanga"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   depends_on "tmux"
@@ -13,16 +13,16 @@ class Treekanga < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/garrettkrohn/treekanga/releases/download/v1.1.0/treekanga_Darwin_x86_64.tar.gz"
-      sha256 "91a807bcc43b0c6816e00f1d75acbb412d9846f2a0f5b036b4c3721901a116b3"
+      url "https://github.com/garrettkrohn/treekanga/releases/download/v1.1.1/treekanga_Darwin_x86_64.tar.gz"
+      sha256 "81bf4e9261317d718857feb2c26adf239bf5105d43a8e89d688eb2b8c0faa405"
 
       def install
         bin.install "treekanga"
       end
     end
     on_arm do
-      url "https://github.com/garrettkrohn/treekanga/releases/download/v1.1.0/treekanga_Darwin_arm64.tar.gz"
-      sha256 "f2efba55f699d9d20df285ed27e23a1c181c84af20467a72b1f6cd724ed85e81"
+      url "https://github.com/garrettkrohn/treekanga/releases/download/v1.1.1/treekanga_Darwin_arm64.tar.gz"
+      sha256 "c343f2e7a71dd4ad14cd1c704421a85338f963262a86907a84e2ba28b112c2c2"
 
       def install
         bin.install "treekanga"
@@ -33,8 +33,8 @@ class Treekanga < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/garrettkrohn/treekanga/releases/download/v1.1.0/treekanga_Linux_x86_64.tar.gz"
-        sha256 "04698261256347bf5d656a9f94fc218b6e33bfe9b27f8fc9c6a99c3e085bb28d"
+        url "https://github.com/garrettkrohn/treekanga/releases/download/v1.1.1/treekanga_Linux_x86_64.tar.gz"
+        sha256 "a11b81c8123a89b1f6282757e1c444b1d5a60ad93c30c9f11806e324681b594a"
 
         def install
           bin.install "treekanga"
@@ -43,8 +43,8 @@ class Treekanga < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/garrettkrohn/treekanga/releases/download/v1.1.0/treekanga_Linux_arm64.tar.gz"
-        sha256 "d2427ae2763b50b9b8785154fccfd884784b86d4cd53fa8767878d650a80128d"
+        url "https://github.com/garrettkrohn/treekanga/releases/download/v1.1.1/treekanga_Linux_arm64.tar.gz"
+        sha256 "a3a1435981493b8e6a6ae2158195c6afc41caf380b5ac3594694e696c1fb059b"
 
         def install
           bin.install "treekanga"
